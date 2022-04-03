@@ -43,7 +43,7 @@ Figure 2: Comparison of Large GPT and RETRO
 
 + Traditional GPT model will be fed both language information and world knowledge information.
 
-+ RETRO is fed only language information to train the basic language model, and then the world knowledge information is searched in a tokenized database.
++ A pre-trained transformer encode is used to encode the world knowledge information searched in a tokenized database.
 
 + The key of the database is standard BERT token, and the value contains two part, Neighbor and Completion.
 
@@ -71,7 +71,7 @@ Therefore, the weight in the black box is revealed by the search of database. An
 
 ## Performance
 
-The experiment was performed on Colossal Clean Crawled Corpus, Wikitext103, Curation Corpus, LAMBADA and Pile.
+The experiment was performed on Colossal Clean Crawled several large text databases: Corpus, Wikitext103, Curation Corpus, LAMBADA and Pile.
 
 ![](./files/figure5.png)
 
@@ -94,11 +94,11 @@ Besides, as the transformer encoder part is considered a language information pr
 
 ## Discussion Topics
 
-### Is search/query for information really faster than scaling larger models?
++ Is search/query for information really faster than scaling larger models?
 
-### Do you think freezing the pre-trained transformer (for language model) is good?
++ Do you think freezing the pre-trained transformer (for language model) is good?
 
-### Is the database really useful to solve ethical problems?
++ Is the database really useful to solve ethical problems?
 
 ## Resource Links
 
