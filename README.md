@@ -106,6 +106,8 @@ Besides, as the transformer encoder part is considered a language information pr
 
 2. https://github.com/lucidrains/RETRO-pytorch
 
+3. http://jalammar.github.io/illustrated-retrieval-transformer/
+
 ## Video Recording
 
 https://www.youtube.com/watch?v=-93KBOg77Sg&t=925s
