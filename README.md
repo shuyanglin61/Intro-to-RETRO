@@ -9,7 +9,7 @@ Retrieval-Enhanced Transformer, abbreviated to RETRO, is introduced by DeepMind 
 
 Table 1: Comparison of RETRO with existing retrieval approaches.
 
-## Architecture of RETRO
+### Architecture of RETRO
 
 ![](./files/figure1.png)
 
@@ -43,7 +43,7 @@ Figure 2: Comparison of Large GPT and RETRO
 
 + Traditional GPT model will be fed both language information and world knowledge information.
 
-+ A pre-trained transformer encode is used to encode the world knowledge information searched in a tokenized database.
++ A pre-trained transformer encoder is used to encode the world knowledge information searched in a tokenized database.
 
 + The key of the database is standard BERT token, and the value contains two part, Neighbor and Completion.
 
@@ -53,7 +53,7 @@ Figure 3: The structure of the database
 
 Therefore, the weight in the black box is revealed by the search of database. And with so, the number of parameters could be reduced.
 
-## Use Case
+### Use Case
 
 ![](./files/figure4.jpg)
 
@@ -69,21 +69,21 @@ Therefore, the weight in the black box is revealed by the search of database. An
 
 + Get the output.
 
-## Performance
+### Performance
 
-The experiment was performed on Colossal Clean Crawled several large text databases: Corpus, Wikitext103, Curation Corpus, LAMBADA and Pile.
+The experiment was performed on several large text databases: Colossal Clean Crawled Corpus, Wikitext103, Curation Corpus, LAMBADA and Pile.
 
 ![](./files/figure5.png)
 
 Figure 5: Scaling with respect to model size.
 
-We can see the accuracy of RETRO on LAMBADA is top-1.
+We can see the accuracy of RETRO on LAMBADA is top one.
 
-## Biases, Misinformation and Toxic Language
+### Biases, Misinformation and Toxic Language
 
-According to DeepMind, RETRO could help address this issue because it is easier to see what the AI has learned by examining the database than by studying the neural network.
+According to DeepMind, RETRO could help address this issue because it is easier to see what the AI has learned by examining the retrieval database than by studying the neural network in other models.
 
-In theory, this could allow examples of harmful language to be filtered out or balanced with non-harmful examples. But DeepMind has not yet tested this claim.
+In theory, this could allow examples of harmful language to be filtered out or balanced with non-harmful examples. However, DeepMind has not yet tested this claim.
 
 ## Critical Analysis
 
